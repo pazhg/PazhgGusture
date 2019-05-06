@@ -10,13 +10,18 @@ import UIKit
 
 class DiscreteViewController: UIViewController {
 
+    @IBOutlet weak var textviewGesture: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func gestureTapRecogniser(_ sender: UITapGestureRecognizer) {
+        textviewGesture.text.append ("Gesture Tap -> Number of touches : \(sender.numberOfTouches)\n" )
+    }
+    
     /*
     // MARK: - Navigation
 

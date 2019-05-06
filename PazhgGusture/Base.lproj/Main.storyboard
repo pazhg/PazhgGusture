@@ -168,20 +168,43 @@
                                 <color key="textColor" red="0.1315036416053772" green="0.6046181321144104" blue="0.5890623927116394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cML-Ad-iA2">
+                                <rect key="frame" x="16" y="113" width="382" height="729"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.1315036416053772" green="0.6046181321144104" blue="0.5890623927116394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="cML-Ad-iA2" firstAttribute="top" secondItem="KwL-pE-AgL" secondAttribute="bottom" constant="20" id="1W6-Kv-Y4r"/>
+                            <constraint firstItem="LVt-fm-axk" firstAttribute="bottom" secondItem="cML-Ad-iA2" secondAttribute="bottom" constant="20" id="AJM-1e-xOf"/>
+                            <constraint firstItem="cML-Ad-iA2" firstAttribute="leading" secondItem="LVt-fm-axk" secondAttribute="leading" constant="16" id="RrR-Vl-T0f"/>
                             <constraint firstItem="KEQ-wy-GTV" firstAttribute="top" secondItem="LVt-fm-axk" secondAttribute="top" constant="15" id="Ymv-3f-cbq"/>
                             <constraint firstItem="LVt-fm-axk" firstAttribute="trailing" secondItem="KEQ-wy-GTV" secondAttribute="trailing" constant="16" id="Ymy-mj-64v"/>
                             <constraint firstItem="KwL-pE-AgL" firstAttribute="leading" secondItem="LVt-fm-axk" secondAttribute="leading" constant="16" id="Z6R-77-FBU"/>
+                            <constraint firstItem="LVt-fm-axk" firstAttribute="trailing" secondItem="cML-Ad-iA2" secondAttribute="trailing" constant="16" id="lww-qT-4dO"/>
                             <constraint firstItem="KwL-pE-AgL" firstAttribute="top" secondItem="LVt-fm-axk" secondAttribute="top" constant="28" id="roV-p9-PzH"/>
                             <constraint firstItem="KEQ-wy-GTV" firstAttribute="leading" secondItem="KwL-pE-AgL" secondAttribute="trailing" constant="10" id="z1e-J4-WBc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LVt-fm-axk"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="A0E-BK-ZoU" appends="YES" id="Rsa-q9-o2H"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textviewGesture" destination="cML-Ad-iA2" id="21r-Ty-ZcX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dh-V7-qDG" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="nBe-TP-MIF" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="A0E-BK-ZoU">
+                    <connections>
+                        <action selector="gestureTapRecogniser:" destination="a58-sS-4XP" id="vpA-qQ-Sei"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="976.81159420289862" y="138.61607142857142"/>
         </scene>
