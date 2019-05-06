@@ -14,6 +14,8 @@
 		888270FE228029C5008817DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 888270FC228029C5008817DF /* LaunchScreen.storyboard */; };
 		88827109228029C6008817DF /* PazhgGustureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88827108228029C6008817DF /* PazhgGustureTests.swift */; };
 		88827114228029C6008817DF /* PazhgGustureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88827113228029C6008817DF /* PazhgGustureUITests.swift */; };
+		88B7C23D228082A4001A2ED6 /* DiscreteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C23C228082A4001A2ED6 /* DiscreteViewController.swift */; };
+		88B7C23F228085A5001A2ED6 /* ContinuesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B7C23E228085A5001A2ED6 /* ContinuesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		8882710F228029C6008817DF /* PazhgGustureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PazhgGustureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88827113228029C6008817DF /* PazhgGustureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PazhgGustureUITests.swift; sourceTree = "<group>"; };
 		88827115228029C6008817DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88B7C23C228082A4001A2ED6 /* DiscreteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscreteViewController.swift; sourceTree = "<group>"; };
+		88B7C23E228085A5001A2ED6 /* ContinuesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				888270F3228029C3008817DF /* AppDelegate.swift */,
+				88B7C23C228082A4001A2ED6 /* DiscreteViewController.swift */,
+				88B7C23E228085A5001A2ED6 /* ContinuesViewController.swift */,
 				888270F5228029C3008817DF /* ViewController.swift */,
 				888270F7228029C3008817DF /* Main.storyboard */,
 				888270FA228029C5008817DF /* Assets.xcassets */,
@@ -258,6 +264,8 @@
 			files = (
 				888270F6228029C3008817DF /* ViewController.swift in Sources */,
 				888270F4228029C3008817DF /* AppDelegate.swift in Sources */,
+				88B7C23D228082A4001A2ED6 /* DiscreteViewController.swift in Sources */,
+				88B7C23F228085A5001A2ED6 /* ContinuesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
