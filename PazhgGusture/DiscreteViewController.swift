@@ -34,7 +34,7 @@ class DiscreteViewController: UIViewController {
     @IBAction func gestureSwipeDown(_ sender: UISwipeGestureRecognizer) {
         textviewGesture.text.append("Gesture Swipe -> Down : Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
     }
-    
+
     /*
     // MARK: - Navigation
 

@@ -10,6 +10,7 @@ import UIKit
 
 class ContinuesViewController: UIViewController {
 
+    @IBOutlet weak var textviewGesture: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,6 +18,15 @@ class ContinuesViewController: UIViewController {
     }
     
 
+    @IBAction func gestureLongPress(_ sender: UILongPressGestureRecognizer) {
+
+        textviewGesture.text.append("LongPress Gesture: Minimum Press Duration \( sender.minimumPressDuration.description)\n")
+
+    }
+    @IBAction func gesturePan(_ sender: UIPanGestureRecognizer) {
+        textviewGesture.text.append("Pan Gesture: Minimum number of touches \( sender.minimumNumberOfTouches)\n")
+
+    }
     /*
     // MARK: - Navigation
 
