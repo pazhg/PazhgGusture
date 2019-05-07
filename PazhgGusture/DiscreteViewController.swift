@@ -19,7 +19,20 @@ class DiscreteViewController: UIViewController {
     }
     
     @IBAction func gestureTapRecogniser(_ sender: UITapGestureRecognizer) {
-        textviewGesture.text.append ("Gesture Tap -> Number of touches : \(sender.numberOfTouches)\n" )
+        textviewGesture.text.append ("Tap Gesture -> Tap Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
+    }
+    @IBAction func gestureSwipeRight(_ sender: UISwipeGestureRecognizer) {
+        textviewGesture.text.append("Gesture Swipe -> Right : Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
+    }
+    @IBAction func gestureSwipeLeft(_ sender: UISwipeGestureRecognizer) {
+         textviewGesture.text.append("Gesture Swipe -> Left : Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
+    }
+    @IBAction func gestureSwipeUp(_ sender: UISwipeGestureRecognizer) {
+         textviewGesture.text.append("Gesture Swipe -> Up : Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
+    }
+
+    @IBAction func gestureSwipeDown(_ sender: UISwipeGestureRecognizer) {
+        textviewGesture.text.append("Gesture Swipe -> Down : Require Touch \(sender.numberOfTouchesRequired), Number of touches: \(sender.numberOfTouches)\n")
     }
     
     /*
